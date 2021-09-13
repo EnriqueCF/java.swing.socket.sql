@@ -1,6 +1,6 @@
 # TicTacToe. Solucion 8.2. mvp - presentationModel - with Double Dispatching
-Universo Santa Tecla  
-[uSantaTecla@gmail.com](mailto:uSantaTecla@gmail.com)
+Enrique Casas Fernández 
+[e.casasf@alumnos.urjc.es](mailto:e.casasf@alumnos.urjc.es)
 
 **Índice**
 1. [Requisitos 2. Gráficos](#requisitos-2-gráficos)
