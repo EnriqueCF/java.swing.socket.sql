@@ -1,12 +1,11 @@
 package usantatecla.tictactoe.controllers;
 
-import usantatecla.tictactoe.models.Game;
-import usantatecla.tictactoe.models.State;
+import usantatecla.tictactoe.models.Session;
 
 public class StartController extends Controller {
 
-    public StartController(Game game, State state) {
-        super(game, state);
+    public StartController(Session session) {
+        super(session);
     }
 
     @Override

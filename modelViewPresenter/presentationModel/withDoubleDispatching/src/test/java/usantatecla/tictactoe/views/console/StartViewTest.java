@@ -1,5 +1,13 @@
 package usantatecla.tictactoe.views.console;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.is;
+import static org.mockito.Mockito.atLeast;
+import static org.mockito.Mockito.mockStatic;
+import static org.mockito.Mockito.verify;
+
+import java.util.List;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -7,16 +15,10 @@ import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
 import org.mockito.MockedStatic;
 import org.mockito.junit.jupiter.MockitoExtension;
+
 import usantatecla.tictactoe.controllers.StartController;
-import usantatecla.tictactoe.models.Game;
-import usantatecla.tictactoe.models.State;
+import usantatecla.tictactoe.models.Session;
 import usantatecla.utils.views.Console;
-
-import java.util.List;
-
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.is;
-import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 public class StartViewTest {
@@ -30,7 +32,7 @@ public class StartViewTest {
 
     @BeforeEach
     public void beforeEach() {
-        this.startController = new StartController(new Game(), new State());
+        this.startController = new StartController(new Session());
         this.startView = new StartView();
         this.conversor = new Conversor();
     }
